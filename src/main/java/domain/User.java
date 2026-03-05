@@ -6,9 +6,9 @@ public class User {
     private int cnt;
 
     public User(int id, String name){
-        this.userId=id;
-        this.userName=name;
-        this.cnt=0;
+        this.userId = id;
+        this.userName = name;
+        this.cnt = 0;
     }
 
     public void setCnt(int value){
@@ -17,6 +17,10 @@ public class User {
 
     public int getUserId() {
         return userId;
+    }
+
+    public String getUserName() {
+        return userName;
     }
 
     public int getCnt() {

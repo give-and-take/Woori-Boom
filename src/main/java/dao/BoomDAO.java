@@ -9,21 +9,23 @@ public class BoomDAO {
     private final List<User> list = new ArrayList<>();
     private int nextId = 1;
 
-    public List<User> findAll(){
+    public BoomDAO() {
         list.add(new User(nextId++, "이건희"));
         list.add(new User(nextId++, "선지원"));
         list.add(new User(nextId++, "백민정"));
+    }
+
+    public List<User> findAll(){
         return list;
     }
 
     public User findById(int id) {
-        return findAll().stream()
+        return list.stream()
                 .filter(p -> p.getUserId() == id)
                 .findFirst()
                 .orElse(null);
     }
 
-    // 새로운 사용자 등록
     public User addUser(String name) {
         User user = new User(nextId++, name);
         list.add(user);
