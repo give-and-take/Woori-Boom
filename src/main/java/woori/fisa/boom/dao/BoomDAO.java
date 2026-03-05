@@ -1,6 +1,6 @@
-package dao;
+package woori.fisa.boom.dao;
 
-import domain.User;
+import woori.fisa.boom.domain.User;
 
 import java.util.ArrayList;
 import java.util.List;

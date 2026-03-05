@@ -1,4 +1,4 @@
-package domain;
+package woori.fisa.boom.domain;
 
 public class User {
     private int userId;
